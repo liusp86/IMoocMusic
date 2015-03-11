@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
+import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageButton;
@@ -46,6 +47,26 @@ public class MainActivity extends Activity {
 		mPanAnim = AnimationUtils.loadAnimation(this, R.anim.rotate);
 		mPanLin = new LinearInterpolator();
 		mPanAnim.setInterpolator(mPanLin);
+		mPanAnim.setAnimationListener(new AnimationListener() {
+			
+			@Override
+			public void onAnimationStart(Animation animation) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void onAnimationRepeat(Animation animation) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void onAnimationEnd(Animation animation) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
 		
 		mBarInAnim = AnimationUtils.loadAnimation(this, R.anim.rotate_45);
 		mBarInLin = new LinearInterpolator();
