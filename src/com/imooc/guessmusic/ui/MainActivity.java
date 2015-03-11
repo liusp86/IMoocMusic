@@ -1,4 +1,4 @@
-package com.imooc.guessmusic.ui;
+﻿package com.imooc.guessmusic.ui;
 
 import com.imooc.guessmusic.R;
 
@@ -58,6 +58,7 @@ public class MainActivity extends Activity {
 		mBtnPlayStart = (ImageButton) findViewById(R.id.btn_play_start);
 		mBtnPlayStart.setOnClickListener(new View.OnClickListener() {
 			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
